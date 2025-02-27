@@ -28,6 +28,10 @@ func goCal(firstNum int, secondNum int) {
 	}
 }
 
+func div(a int, b int) int{
+	return a / b
+}
+
 func main() {
 	var firstNum int
 	var secondNum int
@@ -41,6 +45,8 @@ func main() {
 	fmt.Scanf("%d", &firstNum)
 
 	//2- ask the user to enter the second number and store the value in "secondNum"
-
+	fmt.Print("Enter the first number: ")
+	fmt.Scanf("%d", &secondNum)
 	//3- Call the "GoCal" function with the proper parameters
+	goCal(firstNum, secondNum)
 }
